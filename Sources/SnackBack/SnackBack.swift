@@ -1,2 +1,0 @@
-/// For namespacing.
-enum SnackBack {}
