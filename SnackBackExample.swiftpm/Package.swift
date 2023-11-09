@@ -32,9 +32,15 @@ let package = Package(
             ]
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/dtaylor1701/snackback", "0.3.0"..<"1.0.0")
+    ],
     targets: [
         .executableTarget(
             name: "AppModule",
+            dependencies: [
+                .product(name: "SnackBack", package: "snackback")
+            ],
             path: ".",
             swiftSettings: [
                 .enableUpcomingFeature("BareSlashRegexLiterals")

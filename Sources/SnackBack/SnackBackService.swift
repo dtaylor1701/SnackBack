@@ -13,7 +13,7 @@ public final class SnackBackService: Service, SnackBackServicing {
 
   public let key: String
 
-  init(key: String) {
+  public init(key: String) {
     self.key = key
 
     super.init(host: "")

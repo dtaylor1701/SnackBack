@@ -1,12 +1,33 @@
 import SwiftUI
+import SnackBack
+import SnackBackModels
 
 struct ContentView: View {
+    @State
+    var message: String = ""
+    
+    let service: SnackBackServicing
+    
+    init(key: String) {
+        self.service = SnackBackService(key: key)
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Form {
+            Section {
+                 
+                TextField(text: $message) {
+                    Text("Let us know what you think")
+                }   
+            }
+            Section {
+                Button {
+                    service.submit(feedback: .init(from: JSONDecoder()))
+                } label: {
+                    Text("Submit")
+                }    
+            }
+            
         }
     }
 }

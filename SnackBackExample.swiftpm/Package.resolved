@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "pigeon",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dtaylor1701/Pigeon",
+      "state" : {
+        "revision" : "e80999580f0edc01978c89d355fedc3da8197c9f",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "snackback",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dtaylor1701/snackback",
+      "state" : {
+        "revision" : "a2bb9b7f3c692119a329b54e40417acca40d6970",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "snackbackmodels",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dtaylor1701/SnackBackModels",
+      "state" : {
+        "revision" : "6bfffe3345a4db9c0cfbefe0749c27f872832829",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
