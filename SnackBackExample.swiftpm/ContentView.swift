@@ -12,6 +12,10 @@ struct ContentView: View {
         self.service = SnackBackService(key: key)
     }
     
+    var feedback: FeedbackContent {
+        FeedbackContent(message: message)
+    }
+    
     var body: some View {
         Form {
             Section {
@@ -22,7 +26,7 @@ struct ContentView: View {
             }
             Section {
                 Button {
-                    service.submit(feedback: .init(from: JSONDecoder()))
+//                    service.submit(feedback: FeedbackContent(message: message))
                 } label: {
                     Text("Submit")
                 }    

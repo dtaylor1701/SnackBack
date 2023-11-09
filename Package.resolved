@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dtaylor1701/SnackBackModels",
       "state" : {
-        "revision" : "6bfffe3345a4db9c0cfbefe0749c27f872832829",
-        "version" : "0.1.0"
+        "revision" : "7beda978f2cb94cd4652be08e7b5134c36a4ca10",
+        "version" : "0.1.1"
       }
     }
   ],

@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dtaylor1701/snackback",
       "state" : {
-        "revision" : "a2bb9b7f3c692119a329b54e40417acca40d6970",
-        "version" : "0.3.0"
+        "revision" : "323a1018becc00f0053f3d4d390fb24a693a6f61",
+        "version" : "0.3.1"
       }
     },
     {
