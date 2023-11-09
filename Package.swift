@@ -16,7 +16,7 @@ let package = Package(
       targets: ["SnackBack"])
   ],
   dependencies: [
-    .package(url: "https://github.com/dtaylor1701/SnackBackModels", branch: "main"),
+    .package(url: "https://github.com/dtaylor1701/SnackBackModels", from: "0.1.0"),
     .package(url: "https://github.com/dtaylor1701/Pigeon", from: "1.0.0"),
   ],
   targets: [
