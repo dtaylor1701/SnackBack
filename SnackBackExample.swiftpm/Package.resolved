@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dtaylor1701/snackback",
       "state" : {
-        "revision" : "323a1018becc00f0053f3d4d390fb24a693a6f61",
-        "version" : "0.3.1"
+        "revision" : "61deaab38d153f98656b4d6fb803a656524deb27",
+        "version" : "0.3.2"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dtaylor1701/SnackBackModels",
       "state" : {
-        "revision" : "6bfffe3345a4db9c0cfbefe0749c27f872832829",
-        "version" : "0.1.0"
+        "revision" : "7beda978f2cb94cd4652be08e7b5134c36a4ca10",
+        "version" : "0.1.1"
       }
     }
   ],
