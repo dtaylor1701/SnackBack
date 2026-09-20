@@ -1,6 +1,7 @@
 import SnackBackModels
 import SwiftUI
 
+@MainActor
 public class FeedbackViewModel: ObservableObject {
   @Published public var message: String = ""
   @Published public var isSubmitting: Bool = false

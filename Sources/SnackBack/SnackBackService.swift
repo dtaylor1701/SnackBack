@@ -8,11 +8,11 @@ public enum SnackBackError: Error {
   case serverError(statusCode: Int)
 }
 
-public protocol SnackBackServicing {
+public protocol SnackBackServicing: Sendable {
   func submit(feedback: FeedbackContent) async throws
 }
 
-public final class SnackBackService: Service, SnackBackServicing {
+public final class SnackBackService: Service, SnackBackServicing, @unchecked Sendable {
 
   public let key: String
 
@@ -33,7 +33,7 @@ public final class SnackBackService: Service, SnackBackServicing {
     
     do {
       let content = try encoder.encode(requestPayload)
-      try await request(.post, path: "send_feedback", body: content)
+      _ = try await request(.post, path: "send_feedback", body: content)
     } catch let error as URLError {
       throw SnackBackError.networkFailure(error)
     } catch {
